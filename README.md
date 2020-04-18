@@ -40,3 +40,15 @@ command: rails d migration table_name(migration_name)
 
 Re-factor the code - *code doesnt smell* - clean code, confidence
 www.learn.sayhowe.com for learning html and css
+
+
+Routes:
+Prefix       Verb   URI Pattern          Controller#Action
+
+recipes      GET     /recipes             recipes#index
+new_recipe   GET     /recipes/new         recipes#new         #displays a form
+             POST    /recipes             recipes#create      #submit the informatin from the form
+edit_recipe  GET     /recipes/:id/edit    recipes#edit        #display an edit form
+             PATCH   /recipes/:id         recipes#update      #submit the edit form information
+recipe       GET     /recipes/:id         recipes#show        #display a particular recipe
+             DELETE  /recipes/:id         recipes#destroy     #deletes a particular recipe
